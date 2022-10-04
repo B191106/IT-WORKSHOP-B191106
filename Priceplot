@@ -1,0 +1,19 @@
+import pandas as pd
+df=pd.read_csv("/BS.csv")
+
+df.head(5)
+df=df.dropna()
+price=df['Price']
+import matplotlib.pyplot as plt
+
+plt.hist(price)
+print(df['Price'].mean())
+print(df['Price'].median())
+print(df['Price'].mode())
+print(df['Price'].std())
+print(subrub_count)
+rooms_type=df['Type'].value_counts()rooms_type=dict(rooms_type)
+print(rooms_type)
+plt.bar(x=t,height=c)
+plt.title("Room type")
+plt.show()
